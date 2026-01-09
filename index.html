@@ -1,93 +1,101 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backdock Academy</title>
+    <title>Backdock - 印尼语速成 (Belajar Bahasa Indonesia)</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { background-color: #f8f9fa; color: #333; }
-
+        /* Base Styles - Tema Gelap Elegan */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif; }
+        body { background-color: #0f172a; color: #e2e8f0; line-height: 1.6; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
         /* Navbar */
-        nav { background: #1a252f; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; color: white; }
-        nav h1 { font-size: 1.5rem; letter-spacing: 2px; }
-        nav ul { list-style: none; display: flex; gap: 20px; }
-        nav a { color: #ecf0f1; text-decoration: none; font-weight: 500; transition: 0.3s; }
-        nav a:hover { color: #3498db; }
-
+        nav { background-color: #1e293b; padding: 1.5rem 0; border-bottom: 1px solid #334155; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #ef4444; letter-spacing: 1px; } /* Merah China */
+        .logo span { color: white; }
+        
         /* Hero Section */
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?coding,computer'); background-size: cover; background-position: center; color: white; text-align: center; padding: 150px 20px; }
-        .hero h2 { font-size: 3.5rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
-        .hero button { padding: 15px 40px; font-size: 1.1rem; background: #e74c3c; color: white; border: none; cursor: pointer; border-radius: 50px; font-weight: bold; transition: 0.3s; }
-        .hero button:hover { background: #c0392b; transform: scale(1.05); }
+        .hero { padding: 100px 0; text-align: center; background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: white; }
+        .hero p { font-size: 1.3rem; color: #94a3b8; max-width: 700px; margin: 0 auto 30px; }
+        .hero .indo-text { color: #ef4444; font-weight: bold; font-style: italic; }
+        
+        .btn-group { display: flex; gap: 15px; justify-content: center; }
+        .btn { padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-primary { background-color: #ef4444; color: white; } /* Tombol Merah */
+        .btn-primary:hover { background-color: #dc2626; transform: scale(1.05); }
+        .btn-outline { border: 2px solid #ef4444; color: #ef4444; background: transparent; }
+        .btn-outline:hover { background: #ef4444; color: white; }
 
         /* Course Grid */
-        .container { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #2c3e50; }
-        
-        .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        
-        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
-        .card-body { padding: 25px; }
-        .card h3 { margin-bottom: 10px; color: #2c3e50; }
-        .card p { color: #7f8c8d; line-height: 1.6; margin-bottom: 20px; }
-        .card button { width: 100%; padding: 12px; background: #3498db; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
-        .card button:hover { background: #2980b9; }
+        section { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 50px; color: white; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
+        .card { background: #1e293b; border-radius: 15px; padding: 30px; border: 1px solid #334155; transition: 0.3s; position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-10px); border-color: #ef4444; }
+        .card h3 { font-size: 1.5rem; margin-bottom: 10px; color: white; }
+        .card p { color: #cbd5e1; margin-bottom: 20px; font-size: 0.95rem; }
+        .level-badge { display: inline-block; padding: 5px 12px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 15px; background: #334155; color: #94a3b8; }
+        
         /* Footer */
-        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+        footer { text-align: center; padding: 40px; border-top: 1px solid #334155; color: #64748b; }
     </style>
 </head>
 <body>
 
     <nav>
-        <h1>BACKDOCK</h1>
-        <ul>
-            <li><a href="#">Kelas</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">BACKDOCK <span>印尼语</span></div> </div>
     </nav>
 
     <div class="hero">
-        <h2>Kuasai Skill Digital</h2>
-        <p>Belajar coding, desain, dan marketing dari mentor berpengalaman.</p>
-        <button onclick="alert('Sabar ya Jon, fitur ini lagi dibuat!')">Mulai Belajar Gratis</button>
-    </div>
-
-    <div class="container">
-        <h2 class="section-title">Kelas Populer</h2>
-        <div class="course-grid">
-            <div class="card">
-                <div class="card-body">
-                    <h3>Frontend Dasar</h3>
-                    <p>Membangun tampilan website yang menarik dengan HTML, CSS, dan JavaScript modern.</p>
-                    <button>Lihat Silabus</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Backend Python</h3>
-                    <p>Belajar logika server dan database menggunakan bahasa Python yang powerful.</p>
-                    <button>Lihat Silabus</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h3>Fullstack Developer</h3>
-                    <p>Paket komplit dari frontend sampai backend untuk karir profesionalmu.</p>
-                    <button>Lihat Silabus</button>
-                </div>
+        <div class="container">
+            <h1>在印尼开工厂，语言不通？<br>Kami Bantu Anda Bicara!</h1>
+            <p>专为华人设计的印尼语课程。从日常交流到<span class="indo-text">工厂管理 (Manajemen Pabrik)</span>，让您沟通无障碍。</p>
+            
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">开始学习 (Mulai Belajar)</a>
+                <a href="#" class="btn btn-outline">免费试听 (Coba Gratis)</a>
             </div>
         </div>
     </div>
 
+    <section class="container">
+        <h2 class="section-title">课程选择 (Pilihan Kelas)</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="level-badge">入门级 (Pemula)</span>
+                <h3>🇮🇩 日常生存印尼语</h3>
+                <p>Belajar percakapan dasar: Cara memesan makan, naik Grab, dan belanja di pasar.</p>
+                <p style="color: #ef4444;">适合: 刚来印尼的新人</p>
+                <button class="btn btn-primary" style="width:100%">查看详情</button>
+            </div>
+
+            <div class="card">
+                <span class="level-badge">专业级 (Professional)</span>
+                <h3>🏭 工厂生产管理术语</h3>
+                <p>Kosakata khusus pabrik: Bahan baku, mesin rusak, lembur, dan gaji karyawan.</p>
+                <p style="color: #ef4444;">适合: 厂长 / 领班 (Mandor)</p>
+                <button class="btn btn-primary" style="width:100%">查看详情</button>
+            </div>
+
+            <div class="card">
+                <span class="level-badge">高级 (Advance)</span>
+                <h3>🤝 商务谈判与法律</h3>
+                <p>Bahasa hukum & bisnis: Mengurus izin, negosiasi supplier, dan kontrak kerja.</p>
+                <p style="color: #ef4444;">适合: 老板 (Boss)</p>
+                <button class="btn btn-primary" style="width:100%">查看详情</button>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Backdock Academy - Dibuat sambil belajar </p>
+        <p>&copy; 2025 Backdock Education. Membantu Anda Sukses di Indonesia.</p>
     </footer>
 
 </body>
 </html>
-
