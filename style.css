@@ -11,7 +11,24 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 .logo span { color: white; }
         
 /* Head backdock behind you */
-.hero { padding: 100px 0; text-align: center; background: radial-gradient(circle at center, #1e293b 0%, #081025 100%); }
+/* --- BAGIAN HERO (BACKGROUND PABRIK) --- */
+.hero {
+    /* 1. Atur Posisi */
+    padding: 100px 20px;
+    text-align: center !important;
+    position: relative;
+    
+    /* 2. BACKGROUND SAKTI */
+    /* Kita pakai foto Welding (Las) yang terang */
+    background: 
+        linear-gradient(to right, rgba(15,23,42, 0.1), rgba(15,23,42, 0.9), rgba(15,23,42, 0.1)),
+        url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop');
+    
+    /* 3. Aturan Gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: white; }
 .hero p { font-size: 1.3rem; color: #94a3b8; max-width: 700px; margin: 0 auto 30px; }
 .hero .indo-text { color: #ef4444; font-weight: bold; font-style: italic; }
