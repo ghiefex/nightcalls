@@ -6,124 +6,106 @@
     <title>
         Backdock - 印尼语速成 (Belajar Bahasa Indonesia)
     </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-main-index.css">
 </head>
 <body>
-
     <nav>
         <div class="container">
             <div class="logo">
                 BACKDOCK 
                 <span>
-                    印尼语    
+                印尼语    
                 </span>
             </div> 
         </div>
     </nav>
 
-    <div class="hero">
+    <section class="hero">
         <div class="container">
             <h1>
                 Backdock 
-                <br> Behind You !! 
+                <br> 
+                Behind You !! 
             </h1>
             <p class="hero-subtitle">
-                在印尼开工厂，语言不通？
+                <span style="color: #db2f2f; font-size: 0.9em;">
+                    在印尼开工厂，语言不通？
+                </span>
                 <br>
                 <span style="color: #bcd0eb; font-size: 0.9em;">
                     Buka pabrik di Indo, kendala bahasa?
+                <br>
+                    Kerja di perusahaan dari Cina bingung mau bilang apa ke atasan?
+                </span>
+                <br>
+                <span style="color: #db2f2f; font-size: 0.9em;">
+                    在中国公司工作，不知道该跟上司说什么?
                 </span>
             </p>
             <p class="hero-description">
-                Kami mendukungmu dari belakang untuk menguasai Bahasa Indonesia.
+                    Kami mendukungmu dari belakang untuk menguasai Bahasa Indonesia !
                 <br>
                 <span style="color: #f33f3f; font-size: 0.9em;">
-                    我们从背后支持您掌握印尼语
+                    我们从背后支持您掌握印尼语 !
                 </span>
             </p>
             <div class="cta-buttons">
-                <a href="#" class="btn primary">
-                    Mulai Belajar 
-                    <br> 
-                    开始学习
+                <a href="index-belajar-indonesia.html" class="btn primary">
+                    Jago Bahasa Indo
+                    <br>
+                    (开始学习)
+                </a>   
+                <a href="index-belajar-mandarin.html" class="btn secondary">
+                    Survival Bahasa
+                    <br>
+                    Mandarin 🇮🇩
                 </a>
-                <a href="#" class="btn secondary">
-                    Konsultasi 
-                    <br> 
-                    咨询
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <section class="container">
-        <h2 class="section-title">
-            课程选择 
-            <br>
-            Pilihan Kelas
-        </h2>
-        <div class="grid">
-            <div class="card"> 
-                <span class="level-badge">
-                    入门级 Pemula
-                </span>
-                <h3>
-                    🇮🇩 日常生存印尼语
-                </h3>
-                <p>
-                    Belajar percakapan dasar: Cara memesan makan, naik Grab, dan belanja di pasar.
-                </p>
-                <p style="color: #ef4444;">
-                    适合: 刚来印尼的新人 Pendatang
-                </p>
-                <button class="btn btn-primary" style="width:100%">
-                    查看详情
-                </button>
             </div>
 
-            <div class="card">
-                <span class="level-badge">
-                    专业级 Professional
-                </span>
-                <h3>
-                    🏭 工厂生产管理术语
-                </h3>
-                <p>
-                    Kosakata khusus pabrik: Bahan baku, mesin rusak, lembur, dan gaji karyawan.
-                </p>
-                <p style="color: #ef4444;">
-                    适合: 厂长 / 领班 Mandor
-                </p>
-                <button class="btn btn-primary" style="width:100%">
-                    查看详情
-                </button>
-            </div>
-
-            <div class="card">
-                <span class="level-badge">
-                    高级 Advance
-                </span>
-                <h3>
-                    🤝 商务谈判与法律
-                </h3>
-                <p>
-                    Bahasa hukum & bisnis: Mengurus izin, negosiasi supplier, dan kontrak kerja.
-                </p>
-                <p style="color: #ef4444;">
-                    适合: 老板 Boss
-                </p>
-                <button class="btn btn-primary" style="width:100%">
-                    查看详情
-                </button>
-            </div>
-        </div>
+            <div class="system-insight-panel">
+                <div class="sys-label">
+                    <div class="live-dot"> 
+                         SYSTEM INSIGHT
+                    </div>
+                </div>    
+                <div class="sys-text">
+                    "Di tahun 2026, skill teknis saja tidak cukup. Jembatan komunikasi adalah kunci karir global. Jangan biarkan bahasa membatasi potensimu."
+                    <br>
+                    <span style="font-size: 0.9em; color: #64748b; font-style: italic; margin-top: 5px; display: block;">
+                    (技术不仅够。2026年，语言沟通是职业发展的关键。)
+                    </span>
+                </div>       
+            </div> 
+        </div> 
     </section>
-
-    <footer>
-        <p>
-            &copy; 2025 Backdock Education. Membantu Anda Sukses di Indonesia.
-        </p>
-    </footer>
-
+<footer>   
+    <p style=" color: #64748b; text-align: center;">
+        &copy; 2025 Backdock Education. Membantu Anda Sukses di Indonesia.
+    </p>
+</footer>
+<script>
+    // 1. Panggil tukang intip (Observer)
+    const tukangIntip = new IntersectionObserver
+    ((entries) => 
+    {
+        entries.forEach
+        ((entry) => // Kalau elemen terlihat di layar
+        {
+            if (entry.isIntersecting) // Tambahkan kelas "muncul" biar animasinya jalan
+            {                
+                entry.target.classList.add('muncul');
+            }
+        });
+    }, 
+    { // Animasi mulai pas 10% kartu nongol
+        threshold: 0.1 
+    });
+    // 2. Suruh tukang intip mantau semua kartu materi
+    const semuaKartu = document.querySelectorAll('.materi-card');
+    semuaKartu.forEach((kartu) => 
+    {
+        tukangIntip.observe(kartu);
+    });
+</script>
 </body>
 </html>
