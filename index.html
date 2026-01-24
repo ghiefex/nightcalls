@@ -1,112 +1,208 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Backdock - 印尼语速成 (Belajar Bahasa Indonesia)
-    </title>
+    <title>Backdock - Jembatan Karir Indonesia China</title>
     <link rel="stylesheet" href="style-main-index.css">
 </head>
+
 <body>
-    <nav class="navbar-fixed" id="myNavbar">
-    
-    <div class="nav-logo">
-        BACKDOCK <span>印尼语</span>
-    </div>
 
-    <a href="index.html" class="nav-home">
-        Home
-    </a>
-
-</nav>
-
-    <section class="hero">
+    <!-- NAVBAR (Clean, Logo Left, No Home on Main Index) -->
+    <nav class="navbar" id="navbar">
         <div class="container">
+            <a href="#" class="nav-brand">
+                BACKDOCK <span>印尼话</span>
+            </a>
+            <!-- No Menu Links here as per request "Main index jangan dikasih tombol home/menu" 
+                 Keeping it clean or maybe just language indicators?
+                 User said: "untuk di main indexnya jangan di kasis tombol home"
+                 I'll leave the right side empty for a super clean look, 
+                 or maybe just a small "v2.0" badge.
+            -->
+            <div
+                style="color: var(--text-muted); font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px;">
+                v2.0 Beta
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content animate-up">
             <h1>
-                Backdock 
-                <br> 
-                Behind You !! 
+                Karir Global
+                <span class="text-primary">Tanpa Batas</span>
             </h1>
-            <p class="hero-subtitle">
-                <span style="color: #db2f2f; font-size: 0.9em;">
-                    在印尼开工厂，语言不通？
-                </span>
+            <p>
+                Platform penghubung profesional Indonesia & China.
                 <br>
-                <span style="color: #bcd0eb; font-size: 0.9em;">
-                    Buka pabrik di Indo, kendala bahasa?
+                Hancurkan tembok bahasa, bangun karir impian.
                 <br>
-                    Kerja di perusahaan dari Cina bingung mau bilang apa ke atasan?
-                </span>
-                <br>
-                <span style="color: #db2f2f; font-size: 0.9em;">
-                    在中国公司工作，不知道该跟上司说什么?
+                <span style="font-size: 0.9em; margin-top: 10px; display: block; opacity: 0.8;">
+                    连接印尼与中国的专业平台。打破语言障碍，共创未来。
                 </span>
             </p>
-            <p class="hero-description">
-                    Kami mendukungmu dari belakang untuk menguasai Bahasa Indonesia !
-                <br>
-                <span style="color: #f33f3f; font-size: 0.9em;">
-                    我们从背后支持您掌握印尼语 !
-                </span>
-            </p>
-            <div class="cta-buttons">
-                <a href="index-belajar-indonesia.html" class="btn primary">
-                    Jago Bahasa Indo
-                    <br>
-                    (开始学习)
-                </a>   
-                <a href="index-belajar-mandarin.html" class="btn secondary">
-                    Survival Bahasa
-                    <br>
-                    Mandarin 🇮🇩
+
+            <!-- MAIN CTA (Layer 2) -->
+            <div class="hero-buttons">
+                <!-- LINK -> index-belajar-indonesia.html -->
+                <a href="index-belajar-indonesia.html" class="btn btn-secondary">
+                    🇮🇩 Jago Bahasa Indo
+                    <br> <small style="font-size: 0.7em; opacity: 0.8;">(Belajar Bahasa Indonesia)</small>
+                </a>
+
+                <!-- LINK -> index-belajar-mandarin.html -->
+                <a href="index-belajar-mandarin.html" class="btn btn-primary">
+                    🇨🇳 Survival Mandarin
+                    <br> <small style="font-size: 0.7em; opacity: 0.8;">(Belajar Bahasa Mandarin)</small>
                 </a>
             </div>
 
-            <div class="system-insight-panel">
-                <div class="sys-label">
-                    <div class="live-dot"> 
-                         SYSTEM INSIGHT
+            <!-- LAYER 3 QUICK LINKS -->
+            <div style="margin-top: 60px;">
+                <p class="text-muted"
+                    style="margin-bottom: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;">
+                    Eksplorasi Sektoral (Layer 3)
+                </p>
+                <div class="layer-3-grid animate-up delay-200">
+                    <div class="quick-link-card">
+                        <!-- SVG Icon Factory -->
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path
+                                d="M6 22V6a2 2 0 012-2h12a2 2 0 012 2v16M6 22h16M2 22h4m-4 0v-8a2 2 0 012-2h4a2 2 0 012 2v8" />
+                        </svg>
+                        Dunia Industri
                     </div>
-                </div>    
-                <div class="sys-text">
-                    "Di tahun 2026, skill teknis saja tidak cukup. Jembatan komunikasi adalah kunci karir global. Jangan biarkan bahasa membatasi potensimu."
-                    <br>
-                    <span style="font-size: 0.9em; color: #64748b; font-style: italic; margin-top: 5px; display: block;">
-                    (技术不仅够。2026年，语言沟通是职业发展的关键。)
-                    </span>
-                </div>       
-            </div> 
-        </div> 
+                    <div class="quick-link-card">
+                        <!-- SVG Icon Doc -->
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Perizinan (Legal)
+                    </div>
+                    <div class="quick-link-card">
+                        <!-- SVG Icon Book -->
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        Dasar Bahasa
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
-<footer>   
-    <p style=" color: #64748b; text-align: center;">
-        &copy; 2025 Backdock Education. Membantu Anda Sukses di Indonesia.
-    </p>
-</footer>
-<script>
-    // 1. Panggil tukang intip (Observer)
-    const tukangIntip = new IntersectionObserver
-    ((entries) => 
-    {
-        entries.forEach
-        ((entry) => // Kalau elemen terlihat di layar
-        {
-            if (entry.isIntersecting) // Tambahkan kelas "muncul" biar animasinya jalan
-            {                
-                entry.target.classList.add('muncul');
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Backdock Education. Connecting Careers.</p>
+        </div>
+    </footer>
+
+
+    <!-- ============================== -->
+    <!-- FLOATING NAVIGATION & MENU     -->
+    <!-- ============================== -->
+
+    <!-- 1. LEFT: MENU BUTTON -->
+    <div class="fab-container fab-left">
+        <button class="fab-btn" onclick="toggleMenu()">
+            <!-- Hamburger Icon SVG -->
+            <svg id="menuIcon" class="icon-svg" viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- 2. LEFT: THE GLASS MENU (Hidden by default) -->
+    <div class="glass-menu" id="superMenu">
+
+        <!-- SECTION 1: MANDARIN PATH -->
+        <div class="menu-section">
+            <div class="menu-header">🇮🇩 Belajar Mandarin</div>
+            <div class="menu-grid">
+                <a href="materi-mandarin-panggilan.html" class="menu-link">🗣️ Panggilan</a>
+                <a href="materi-mandarin-sapaan.html" class="menu-link">👋 Sapaan</a>
+                <a href="materi-mandarin-izin.html" class="menu-link">🙏 Izin/Maaf</a>
+                <a href="materi-mandarin-kerja.html" class="menu-link">🛠️ Kerja</a>
+                <a href="materi-mandarin-jokes.html" class="menu-link">🤣 Jokes</a>
+                <a href="materi-mandarin-angka.html" class="menu-link">🔢 Angka</a>
+            </div>
+        </div>
+
+        <!-- SECTION 2: INDONESIAN PATH -->
+        <div class="menu-section">
+            <div class="menu-header">🇨🇳 Belajar Indonesia</div>
+            <div class="menu-grid">
+                <a href="materi-indo-gudang.html" class="menu-link">📦 Gudang</a>
+                <a href="materi-indo-mandor.html" class="menu-link">👷‍♂️ Mandor</a>
+                <a href="materi-indo-produksi.html" class="menu-link">⚙️ Produksi</a>
+                <a href="materi-indo-perbaikan.html" class="menu-link">🔧 Perbaikan</a>
+                <a href="materi-indo-seharihari.html" class="menu-link">🏠 Daily</a>
+                <a href="materi-indo-aplikasi.html" class="menu-link">📱 Apps</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. RIGHT: BACK BUTTON (Hidden on Index usually, but I'll add it for consistency if user navigates deeper) -->
+    <!-- Actually, on index.html, "Back" usually exits the site or does nothing. 
+         But user asked for it "di pojok kiri bawah ada tombol yang ngambang juga... eh pojok kanan bawah kembali ke menu sebelumnya"
+         I will include it, but maybe it doesn't make sense on Landing Page? 
+         I'll include it anyway as requested.
+    -->
+    <div class="fab-container fab-right">
+        <button class="fab-btn" onclick="window.history.back()">
+            <!-- Back Arrow SVG -->
+            <svg class="icon-svg" viewBox="0 0 24 24">
+                <path d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
         });
-    }, 
-    { // Animasi mulai pas 10% kartu nongol
-        threshold: 0.1 
-    });
-    // 2. Suruh tukang intip mantau semua kartu materi
-    const semuaKartu = document.querySelectorAll('.materi-card');
-    semuaKartu.forEach((kartu) => 
-    {
-        tukangIntip.observe(kartu);
-    });
-</script>
+
+        // Toggle Menu Logic
+        function toggleMenu() {
+            const menu = document.getElementById('superMenu');
+            const icon = document.getElementById('menuIcon');
+
+            menu.classList.toggle('active');
+
+            // Toggle Icon (Hamburger <-> X)
+            if (menu.classList.contains('active')) {
+                // Change to X
+                icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
+            } else {
+                // Change back to Hamburger
+                icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
+            }
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (event) {
+            const menu = document.getElementById('superMenu');
+            const btn = document.querySelector('.fab-left .fab-btn');
+
+            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    </script>
 </body>
+
 </html>
