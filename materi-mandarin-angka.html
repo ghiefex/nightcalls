@@ -1,196 +1,238 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi Angka - Backdock</title>
+    <title>Materi Gudang - Backdock</title>
     <link rel="stylesheet" href="style-main-index.css">
 </head>
 
 <body>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
+                url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
+
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index-belajar-mandarin.html" class="nav-brand">BACKDOCK <span>印尼话</span></a>
-            <a href="index.html" class="nav-link">Home 🏠</a>
+            <a href="index.html" class="nav-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" style="width: 20px; height: 20px;">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
         </div>
     </nav>
 
-    <div class="container" style="padding-top: 100px; padding-bottom: 100px; max-width: 800px;">
+    <div class="ad-grid-layout">
+        <aside class="ad-column">
+            <div class="ad-banner" onclick="openAffiliate()">
+                <div>
+                    <h3>Iklan Afiliasi</h3>
+                    <p>Produk Terbaik</p>
+                </div>
+            </div>
+            <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
+        </aside>
 
-        <div class="content-header animate-up">
-            <div class="vocab-icon">🔢</div>
-            <div>
-                <h1>Angka Dasar</h1>
-                <p class="text-muted">Lancar berhitung untuk gaji, jam kerja, dan jumlah barang.</p>
+        <main class="content-area">
+            <div class="content-header animate-up">
+                <div class="vocab-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width: 32px; height: 32px;">
+                        <line x1="4" y1="9" x2="20" y2="9"></line>
+                        <line x1="4" y1="15" x2="20" y2="15"></line>
+                        <line x1="10" y1="3" x2="8" y2="21"></line>
+                        <line x1="16" y1="3" x2="14" y2="21"></line>
+                    </svg>
+                </div>
+                <div>
+                    <h1>Angka Dasar</h1>
+                    <p class="text-muted">Lancar berhitung untuk gaji, jam kerja, dan jumlah barang.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="vocab-list animate-up delay-100">
-            <!-- 0 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">0️⃣</div>
-                <div class="vocab-text">
-                    <h4>Nol</h4>
-                    <p>Líng (零)</p>
+            <div class="vocab-list animate-up delay-100">
+                <!-- ITEMS with Text Icons -->
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">0</span></div>
+                    <div class="vocab-text">
+                        <h4>Nol</h4>
+                        <p>Líng (零)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">1</span></div>
+                    <div class="vocab-text">
+                        <h4>Satu</h4>
+                        <p>Yī (一)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">2</span></div>
+                    <div class="vocab-text">
+                        <h4>Dua</h4>
+                        <p>Èr (二) / Liǎng (两 - *Untuk jumlah*)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">3</span></div>
+                    <div class="vocab-text">
+                        <h4>Tiga</h4>
+                        <p>Sān (三)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">4</span></div>
+                    <div class="vocab-text">
+                        <h4>Empat</h4>
+                        <p>Sì (四)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">5</span></div>
+                    <div class="vocab-text">
+                        <h4>Lima</h4>
+                        <p>Wǔ (五)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">6</span></div>
+                    <div class="vocab-text">
+                        <h4>Enam</h4>
+                        <p>Liù (六)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">7</span></div>
+                    <div class="vocab-text">
+                        <h4>Tujuh</h4>
+                        <p>Qī (七)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">8</span></div>
+                    <div class="vocab-text">
+                        <h4>Delapan</h4>
+                        <p>Bā (八)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">9</span></div>
+                    <div class="vocab-text">
+                        <h4>Sembilan</h4>
+                        <p>Jiǔ (九)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.5rem; font-weight:bold;">10</span></div>
+                    <div class="vocab-text">
+                        <h4>Sepuluh</h4>
+                        <p>Shí (十)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.2rem; font-weight:bold;">11</span></div>
+                    <div class="vocab-text">
+                        <h4>Sebelas</h4>
+                        <p>Shí yī (十一)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.2rem; font-weight:bold;">12</span></div>
+                    <div class="vocab-text">
+                        <h4>Dua Belas</h4>
+                        <p>Shí èr (十二)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.2rem; font-weight:bold;">20</span></div>
+                    <div class="vocab-text">
+                        <h4>Dua Puluh</h4>
+                        <p>Èr shí (二十)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.2rem; font-weight:bold;">21</span></div>
+                    <div class="vocab-text">
+                        <h4>Dua Puluh Satu</h4>
+                        <p>Èr shí yī (二十一)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.2rem; font-weight:bold;">50</span></div>
+                    <div class="vocab-text">
+                        <h4>Lima Puluh</h4>
+                        <p>Wǔ shí (五十)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1.2rem; font-weight:bold;">100</span></div>
+                    <div class="vocab-text">
+                        <h4>Seratus</h4>
+                        <p>Yī bǎi (一百)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1rem; font-weight:bold;">1000</span></div>
+                    <div class="vocab-text">
+                        <h4>Seribu</h4>
+                        <p>Yī qiān (一千)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1rem; font-weight:bold;">10K</span></div>
+                    <div class="vocab-text">
+                        <h4>Sepuluh Ribu</h4>
+                        <p>Yī wàn (一万)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><span style="font-size:1rem; font-weight:bold;">1M</span></div>
+                    <div class="vocab-text">
+                        <h4>Satu Juta</h4>
+                        <p>Yī bǎi wàn (一百万)</p>
+                    </div>
                 </div>
             </div>
-            <!-- 1 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">1️⃣</div>
-                <div class="vocab-text">
-                    <h4>Satu</h4>
-                    <p>Yī (一)</p>
+        </main>
+
+        <aside class="ad-column">
+            <div class="ad-banner" onclick="openAffiliate()">
+                <div>
+                    <h3>Iklan Afiliasi</h3>
+                    <p>Produk Terbaik</p>
                 </div>
             </div>
-            <!-- 2 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">2️⃣</div>
-                <div class="vocab-text">
-                    <h4>Dua</h4>
-                    <p>Èr (二) / Liǎng (两 - *Untuk jumlah*)</p>
-                </div>
+            <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
+        </aside>
+    </div>
+
+    <!-- POPUP -->
+    <div class="popup-overlay" id="adPopup">
+        <div class="popup-card">
+            <button class="popup-close" onclick="handlePopupClose(event)">×</button>
+            <div class="popup-img">
+                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="icon-svg"
+                    style="width:50px; height:50px; opacity:0.5;">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
             </div>
-            <!-- 3 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">3️⃣</div>
-                <div class="vocab-text">
-                    <h4>Tiga</h4>
-                    <p>Sān (三)</p>
-                </div>
-            </div>
-            <!-- 4 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">4️⃣</div>
-                <div class="vocab-text">
-                    <h4>Empat</h4>
-                    <p>Sì (四)</p>
-                </div>
-            </div>
-            <!-- 5 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">5️⃣</div>
-                <div class="vocab-text">
-                    <h4>Lima</h4>
-                    <p>Wǔ (五)</p>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">6️⃣</div>
-                <div class="vocab-text">
-                    <h4>Enam</h4>
-                    <p>Liù (六)</p>
-                </div>
-            </div>
-            <!-- 7 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">7️⃣</div>
-                <div class="vocab-text">
-                    <h4>Tujuh</h4>
-                    <p>Qī (七)</p>
-                </div>
-            </div>
-            <!-- 8 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">8️⃣</div>
-                <div class="vocab-text">
-                    <h4>Delapan</h4>
-                    <p>Bā (八)</p>
-                </div>
-            </div>
-            <!-- 9 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">9️⃣</div>
-                <div class="vocab-text">
-                    <h4>Sembilan</h4>
-                    <p>Jiǔ (九)</p>
-                </div>
-            </div>
-            <!-- 10 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">🔟</div>
-                <div class="vocab-text">
-                    <h4>Sepuluh</h4>
-                    <p>Shí (十)</p>
-                </div>
-            </div>
-            <!-- 11 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">1️⃣1️⃣</div>
-                <div class="vocab-text">
-                    <h4>Sebelas</h4>
-                    <p>Shí yī (十一)</p>
-                </div>
-            </div>
-            <!-- 12 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">1️⃣2️⃣</div>
-                <div class="vocab-text">
-                    <h4>Dua Belas</h4>
-                    <p>Shí èr (十二)</p>
-                </div>
-            </div>
-            <!-- 20 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">2️⃣0️⃣</div>
-                <div class="vocab-text">
-                    <h4>Dua Puluh</h4>
-                    <p>Èr shí (二十)</p>
-                </div>
-            </div>
-            <!-- 21 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">2️⃣1️⃣</div>
-                <div class="vocab-text">
-                    <h4>Dua Puluh Satu</h4>
-                    <p>Èr shí yī (二十一)</p>
-                </div>
-            </div>
-            <!-- 50 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">5️⃣0️⃣</div>
-                <div class="vocab-text">
-                    <h4>Lima Puluh</h4>
-                    <p>Wǔ shí (五十)</p>
-                </div>
-            </div>
-            <!-- 100 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">💯</div>
-                <div class="vocab-text">
-                    <h4>Seratus</h4>
-                    <p>Yī bǎi (一百)</p>
-                </div>
-            </div>
-            <!-- 1000 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">💵</div>
-                <div class="vocab-text">
-                    <h4>Seribu</h4>
-                    <p>Yī qiān (一千)</p>
-                </div>
-            </div>
-            <!-- 10000 -->
-            <div class="vocab-item">
-                <div class="vocab-icon">💰</div>
-                <div class="vocab-text">
-                    <h4>Sepuluh Ribu</h4>
-                    <p>Yī wàn (一万)</p>
-                </div>
-            </div>
-            <!-- 1 Juta -->
-            <div class="vocab-item">
-                <div class="vocab-icon">💎</div>
-                <div class="vocab-text">
-                    <h4>Satu Juta</h4>
-                    <p>Yī bǎi wàn (一百万)</p>
-                </div>
-            </div>
+            <h3>Rekomendasi Spesial</h3>
+            <p style="margin-bottom: 20px; color: #94a3b8;">Lihat aplikasi belajar bahasa terbaik untuk HP Anda.</p>
+            <button class="popup-btn" onclick="openAffiliate()">LIHAT APLIKASI</button>
         </div>
     </div>
 
-    <!-- FLOATERS -->
     <div class="fab-container fab-left">
         <button class="fab-btn" onclick="toggleMenu()">
             <svg id="menuIcon" class="icon-svg" viewBox="0 0 24 24">
@@ -234,6 +276,11 @@
     </div>
 
     <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
         function toggleMenu() {
             const menu = document.getElementById('superMenu');
             const icon = document.getElementById('menuIcon');
@@ -246,7 +293,20 @@
             const btn = document.querySelector('.fab-left .fab-btn');
             if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
         });
+        let closeAttempts = 0;
+        const affiliateLink = "https://s.shopee.co.id/1LZlvLOvuG";
+        function openAffiliate() { window.open(affiliateLink, '_blank'); }
+        function handlePopupClose(e) {
+            e.preventDefault();
+            if (closeAttempts === 0) {
+                window.open(affiliateLink, '_blank');
+                closeAttempts++;
+            } else {
+                document.getElementById('adPopup').classList.remove('active');
+            }
+        }
+        if (window.innerWidth < 768) {
+            setTimeout(() => { document.getElementById('adPopup').classList.add('active'); }, 3000);
+        }
     </script>
 </body>
-
-</html>

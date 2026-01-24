@@ -6,20 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Mandarin - Backdock</title>
     <link rel="stylesheet" href="style-main-index.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
+                url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+        }
+
+        .hero {
+            background: transparent !important;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+        }
+
+        .card h3 {
+            color: white;
+        }
+
+        .text-muted {
+            color: #cbd5e1 !important;
+        }
+
+        .navbar {
+            background: rgba(15, 23, 42, 0.8) !important;
+            backdrop-filter: blur(10px);
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="nav-brand">BACKDOCK <span>印尼话</span></a>
-            <a href="index.html" class="nav-link">Home 🏠</a>
+            <a href="index.html" class="nav-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" style="width: 20px; height: 20px;">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
         </div>
     </nav>
 
-    <section class="hero" style="min-height: 60vh;">
+    <section class="hero"
+        style="min-height: 50vh; display:flex; align-items:center; justify-content:center; text-align:center;">
         <div class="hero-content animate-up">
-            <h1>Survival Mandarin 🇨🇳</h1>
-            <p>
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Survival Mandarin 🇨🇳</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">
                 Bahasa Mandarin praktis untuk bertahan hidup di pabrik.
                 <br>
                 Pilih topik di bawah ini untuk mulai belajar.
