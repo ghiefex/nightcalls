@@ -4,24 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backdock - Jembatan Karir Indonesia China</title>
-    <link rel="stylesheet" href="style-main-index.css">
+    <title>Backdock - Jembatan Karir Indonesia-China</title>
+    <link rel="stylesheet" href="style-main-index.css?v=2">
 </head>
 
-<body>
-
+<body class="bg-landing">
     <!-- NAVBAR (Clean, Logo Left, No Home on Main Index) -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="nav-brand">
                 BACKDOCK <span>印尼话</span>
             </a>
-            <!-- No Menu Links here as per request "Main index jangan dikasih tombol home/menu" 
-                 Keeping it clean or maybe just language indicators?
-                 User said: "untuk di main indexnya jangan di kasis tombol home"
-                 I'll leave the right side empty for a super clean look, 
-                 or maybe just a small "v2.0" badge.
-            -->
             <div
                 style="color: var(--text-muted); font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px;">
                 v2.0 Beta
@@ -31,12 +24,12 @@
 
     <!-- HERO SECTION -->
     <section class="hero">
-        <div class="hero-content animate-up">
+        <div class="hero-content animate-up text-center">
             <h1>
                 Karir Global
-                <span class="text-primary">Tanpa Batas</span>
+                <span style="color: var(--primary);">Tanpa Batas</span>
             </h1>
-            <p>
+            <p style="margin-top: 20px; font-size: 1.1rem; opacity: 0.9;">
                 Platform penghubung profesional Indonesia & China.
                 <br>
                 Hancurkan tembok bahasa, bangun karir impian.
@@ -47,15 +40,16 @@
             </p>
 
             <!-- MAIN CTA (Layer 2) -->
-            <div class="hero-buttons">
+            <div class="hero-buttons mt-2">
                 <!-- LINK -> index-belajar-indonesia.html -->
-                <a href="index-belajar-indonesia.html" class="btn btn-secondary">
+                <a href="index-belajar-indonesia.html" class="btn btn-secondary"
+                    style="background: rgba(255,255,255,0.1); color:white; margin: 10px;">
                     🇮🇩 Jago Bahasa Indo
                     <br> <small style="font-size: 0.7em; opacity: 0.8;">(Belajar Bahasa Indonesia)</small>
                 </a>
 
                 <!-- LINK -> index-belajar-mandarin.html -->
-                <a href="index-belajar-mandarin.html" class="btn btn-primary">
+                <a href="index-belajar-mandarin.html" class="btn btn-primary" style="margin: 10px;">
                     🇨🇳 Survival Mandarin
                     <br> <small style="font-size: 0.7em; opacity: 0.8;">(Belajar Bahasa Mandarin)</small>
                 </a>
@@ -65,28 +59,36 @@
             <div style="margin-top: 60px;">
                 <p class="text-muted"
                     style="margin-bottom: 20px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;">
-                    Eksplorasi Sektoral (Layer 3)
+                    Eksplorasi Sektoral
                 </p>
-                <div class="layer-3-grid animate-up delay-200">
-                    <div class="quick-link-card">
+                <!-- Using grid styling inline related since it is unique here or use grid-3 -->
+                <div class="layer-3-grid animate-up delay-200"
+                    style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <div class="quick-link-card"
+                        style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 10px; color: var(--text-muted);">
                         <!-- SVG Icon Factory -->
-                        <svg class="icon-svg" viewBox="0 0 24 24">
+                        <svg class="icon-svg" viewBox="0 0 24 24"
+                            style="width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2;">
                             <path
                                 d="M6 22V6a2 2 0 012-2h12a2 2 0 012 2v16M6 22h16M2 22h4m-4 0v-8a2 2 0 012-2h4a2 2 0 012 2v8" />
                         </svg>
                         Dunia Industri
                     </div>
-                    <div class="quick-link-card">
+                    <div class="quick-link-card"
+                        style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 10px; color: var(--text-muted);">
                         <!-- SVG Icon Doc -->
-                        <svg class="icon-svg" viewBox="0 0 24 24">
+                        <svg class="icon-svg" viewBox="0 0 24 24"
+                            style="width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2;">
                             <path
                                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                         Perizinan (Legal)
                     </div>
-                    <div class="quick-link-card">
+                    <div class="quick-link-card"
+                        style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 10px; color: var(--text-muted);">
                         <!-- SVG Icon Book -->
-                        <svg class="icon-svg" viewBox="0 0 24 24">
+                        <svg class="icon-svg" viewBox="0 0 24 24"
+                            style="width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 2;">
                             <path
                                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
@@ -100,7 +102,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="container">
+        <div class="container" style="justify-content: center;">
             <p>&copy; 2026 Backdock Education. Connecting Careers.</p>
         </div>
     </footer>
@@ -150,12 +152,7 @@
         </div>
     </div>
 
-    <!-- 3. RIGHT: BACK BUTTON (Hidden on Index usually, but I'll add it for consistency if user navigates deeper) -->
-    <!-- Actually, on index.html, "Back" usually exits the site or does nothing. 
-         But user asked for it "di pojok kiri bawah ada tombol yang ngambang juga... eh pojok kanan bawah kembali ke menu sebelumnya"
-         I will include it, but maybe it doesn't make sense on Landing Page? 
-         I'll include it anyway as requested.
-    -->
+    <!-- 3. RIGHT: BACK BUTTON -->
     <div class="fab-container fab-right">
         <button class="fab-btn" onclick="window.history.back()">
             <!-- Back Arrow SVG -->
@@ -165,44 +162,7 @@
         </button>
     </div>
 
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Toggle Menu Logic
-        function toggleMenu() {
-            const menu = document.getElementById('superMenu');
-            const icon = document.getElementById('menuIcon');
-
-            menu.classList.toggle('active');
-
-            // Toggle Icon (Hamburger <-> X)
-            if (menu.classList.contains('active')) {
-                // Change to X
-                icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-            } else {
-                // Change back to Hamburger
-                icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-            }
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('superMenu');
-            const btn = document.querySelector('.fab-left .fab-btn');
-
-            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) {
-                toggleMenu();
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

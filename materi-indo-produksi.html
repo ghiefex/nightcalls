@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Produksi - Backdock</title>
-    <link rel="stylesheet" href="style-main-index.css">
+    <link rel="stylesheet" href="style-main-index.css?v=2">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <style>
         body {
             background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
-                url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop');
+                url('https://images.unsplash.com/photo-1565514020176-db5928a5948f?q=80&w=1600&auto=format&fit=crop');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -39,15 +39,13 @@
 
         <!-- LEFT AD COLUMN (PC ONLY) -->
         <aside class="ad-column">
-            <div class="ad-banner" onclick="window.open('https://s.shopee.co.id/6fbIHBBvwE')">
-                <div>
-                    <h3>Iklan Afiliasi</h3>
-                    <p>Produk Terbaik</p>
-                    <span>(Klik Disini)</span>
-                </div>
+            <div class="ad-banner" onclick="openAffiliate()">
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
-            <div class="ad-banner" style="height: 200px; opacity: 0.5;">
-                Space Iklan
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
         </aside>
 
@@ -64,7 +62,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h1>生产 (Produksi)</h1>
+                    <h1>生产</h1>
                     <p class="text-muted">生产线常用词汇 (Kosa kata lini produksi).</p>
                 </div>
             </div>
@@ -80,8 +78,8 @@
                             <path d="M12 8h.01"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Mùbiāo (目标)</h4>
-                        <p>Target</p>
+                        <h4>目标</h4>
+                        <p>Target (/Tar-get/)</p>
                     </div>
                 </div>
 
@@ -92,8 +90,8 @@
                             </path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Fèipǐn (废品)</h4>
-                        <p>Sampah / Reject</p>
+                        <h4>废品</h4>
+                        <p>Sampah / Reject (/Sam-pah/)</p>
                     </div>
                 </div>
 
@@ -104,8 +102,8 @@
                             </path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Hǎo (好)</h4>
-                        <p>Bagus / Oke</p>
+                        <h4>好</h4>
+                        <p>Bagus / Oke (/Ba-gus/)</p>
                     </div>
                 </div>
 
@@ -116,8 +114,8 @@
                             </path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Bù hǎo (不好)</h4>
-                        <p>Jelek / Tidak Bagus</p>
+                        <h4>不好</h4>
+                        <p>Jelek / Tidak Bagus (/Je-lek/)</p>
                     </div>
                 </div>
 
@@ -126,8 +124,8 @@
                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Kāi jī (开机)</h4>
-                        <p>Jalan Mesin</p>
+                        <h4>开机</h4>
+                        <p>Jalan Mesin (/Ja-lan Me-sin/)</p>
                     </div>
                 </div>
 
@@ -137,8 +135,8 @@
                             <rect x="14" y="4" width="4" height="16"></rect>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Tíng jī (停机)</h4>
-                        <p>Stop Mesin</p>
+                        <h4>停机</h4>
+                        <p>Stop Mesin (/Stop Me-sin/)</p>
                     </div>
                 </div>
 
@@ -147,8 +145,8 @@
                             <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Rè (热)</h4>
-                        <p>Panas</p>
+                        <h4>热</h4>
+                        <p>Panas (/Pa-nas/)</p>
                     </div>
                 </div>
 
@@ -160,24 +158,18 @@
                             <circle cx="12" cy="12" r="3"></circle>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Wèntí (问题)</h4>
-                        <p>Masalah</p>
+                        <h4>问题</h4>
+                        <p>Masalah (/Ma-sa-lah/)</p>
                     </div>
                 </div>
-
-                <!-- ADDING MORE ITEMS AS NEEDED, truncated for cleanliness but keeping original list logic implies I should include all. 
-                     For brevity in this tool call and since I'm doing a massive replace, I will keep the list short but representative.
-                     User instructions: "aplikasi kan di setiap materi yagn ada" - implying I should do this for all. 
-                     I will include the rest of the items with a generic icon to save tokens/complexity, but maintain content.
-                -->
 
                 <div class="vocab-item">
                     <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
                             <circle cx="12" cy="12" r="10"></circle>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Xiǎoxīn (小心)</h4>
-                        <p>Hati-hati</p>
+                        <h4>小心</h4>
+                        <p>Hati-hati (/Ha-ti Ha-ti/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -186,8 +178,8 @@
                             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Chǎnliàng (产量)</h4>
-                        <p>Hasil Produksi</p>
+                        <h4>产量</h4>
+                        <p>Hasil Produksi (/Ha-sil Pro-duk-si/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -196,8 +188,8 @@
                             <polyline points="12 6 12 12 16 14"></polyline>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Sùdù (速度)</h4>
-                        <p>Kecepatan</p>
+                        <h4>速度</h4>
+                        <p>Kecepatan (/Ke-ce-pa-tan/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -208,8 +200,8 @@
                             </path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Cāozuò (操作)</h4>
-                        <p>Operasi</p>
+                        <h4>操作</h4>
+                        <p>Operasi (/O-pe-ra-si/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -217,8 +209,8 @@
                             <path d="M6 9l6 6 6-6"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Chējiān (车间)</h4>
-                        <p>Area Produksi</p>
+                        <h4>车间</h4>
+                        <p>Area Produksi (/A-re-a Pro-duk-si/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -230,8 +222,8 @@
                             <polyline points="10 9 9 9 8 9"></polyline>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Biāozhǔn (标准)</h4>
-                        <p>Standar / SOP</p>
+                        <h4>标准</h4>
+                        <p>Standar / SOP (/Stan-dar/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -239,8 +231,8 @@
                             <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Yóu (油) / Shuǐ (水)</h4>
-                        <p>Minyak / Air</p>
+                        <h4>油 / 水</h4>
+                        <p>Minyak / Air (/Min-yak/ /A-ir/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -248,8 +240,8 @@
                             <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Diàn (电)</h4>
-                        <p>Listrik</p>
+                        <h4>电</h4>
+                        <p>Listrik (/Lis-trik/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -257,8 +249,8 @@
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Qīngjié (清洁)</h4>
-                        <p>Bersih-bersih</p>
+                        <h4>清洁</h4>
+                        <p>Bersih-bersih (/Ber-sih Ber-sih/)</p>
                     </div>
                 </div>
 
@@ -267,17 +259,13 @@
 
         <!-- RIGHT AD COLUMN (PC ONLY) -->
         <aside class="ad-column">
-            <div class="ad-banner" style="height: 50%;">
-                <div>
-                    <h3>Flash Sale!</h3>
-                    <p>Diskon 50%</p>
-                </div>
+            <div class="ad-banner" onclick="openAffiliate()">
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
-            <div class="ad-banner" style="height: 30%; background: var(--primary); color: white;">
-                <div>
-                    <h3>HOT ITEM</h3>
-                    <p>Cek Sekarang</p>
-                </div>
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
         </aside>
 
@@ -288,10 +276,8 @@
         <div class="popup-card">
             <button class="popup-close" onclick="handlePopupClose(event)">×</button>
             <div class="popup-img">
-                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="icon-svg"
-                    style="width:50px; height:50px; opacity:0.5;">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="width: 100px; height: auto; object-fit: contain;">
             </div>
             <h3>Rekomendasi Spesial</h3>
             <p style="margin-bottom: 20px; color: #94a3b8;">Lihat aplikasi belajar bahasa terbaik untuk HP Anda.</p>
@@ -309,17 +295,7 @@
     </div>
 
     <div class="glass-menu" id="superMenu">
-        <div class="menu-section">
-            <div class="menu-header">🇮🇩 Belajar Mandarin</div>
-            <div class="menu-grid">
-                <a href="materi-mandarin-panggilan.html" class="menu-link">🗣️ Panggilan</a>
-                <a href="materi-mandarin-sapaan.html" class="menu-link">👋 Sapaan</a>
-                <a href="materi-mandarin-izin.html" class="menu-link">🙏 Izin/Maaf</a>
-                <a href="materi-mandarin-kerja.html" class="menu-link">🛠️ Kerja</a>
-                <a href="materi-mandarin-jokes.html" class="menu-link">🤣 Jokes</a>
-                <a href="materi-mandarin-angka.html" class="menu-link">🔢 Angka</a>
-            </div>
-        </div>
+
         <div class="menu-section">
             <div class="menu-header">🇨🇳 Belajar Indonesia</div>
             <div class="menu-grid">
@@ -342,60 +318,7 @@
         </button>
     </div>
 
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('scrolled');
-            else navbar.classList.remove('scrolled');
-        });
-
-        // MENU LOGIC
-        function toggleMenu() {
-            const menu = document.getElementById('superMenu');
-            const icon = document.getElementById('menuIcon');
-            menu.classList.toggle('active');
-            if (menu.classList.contains('active')) icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-            else icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-        }
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('superMenu');
-            const btn = document.querySelector('.fab-left .fab-btn');
-            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
-        });
-
-        // --- AD & POPUP LOGIC ---
-        let closeAttempts = 0;
-        const affiliateLink = "https://s.shopee.co.id/6fbIHBBvwE"; // Placeholder
-
-        function openAffiliate() {
-            window.open(affiliateLink, '_blank');
-        }
-
-        function handlePopupClose(e) {
-            e.preventDefault();
-
-            // "ketika popup muncul waktu mau di silang x... nanti buat funsinya jangan close, tapi ke redistake ke aplikasi afiliasi"
-            if (closeAttempts === 0) {
-                // First attempt: REDIRECT / OPEN LINK
-                window.open(affiliateLink, '_blank');
-                closeAttempts++;
-                // Do not close popup, maybe show message? 
-                // "setelah ke apliaksi mereka, waktu mereka klik x yang ke2 kalinya nanti baru bisa closde"
-            } else {
-                // Second attempt: CLOSE
-                document.getElementById('adPopup').classList.remove('active');
-            }
-        }
-
-        // Trigger Popup on Mobile
-        // "tapi untu khp, nanti muncul pop up random"
-        if (window.innerWidth < 768) {
-            setTimeout(() => {
-                document.getElementById('adPopup').classList.add('active');
-            }, 3000); // 3 seconds delay
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Gudang - Backdock</title>
-    <link rel="stylesheet" href="style-main-index.css">
+    <link rel="stylesheet" href="style-main-index.css?v=2">
 </head>
 
 <body>
-    <style>
-        body {
-            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
-                url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1600&auto=format&fit=crop');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-        }
-    </style>
+    body {
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
+    url('https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    }
 
     <nav class="navbar" id="navbar">
         <div class="container">
@@ -36,12 +34,13 @@
         <!-- LEFT AD -->
         <aside class="ad-column">
             <div class="ad-banner" onclick="openAffiliate()">
-                <div>
-                    <h3>Iklan Afiliasi</h3>
-                    <p>Cek Promo</p>
-                </div>
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
-            <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
         </aside>
 
         <!-- MAIN CONTENT -->
@@ -59,7 +58,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h1>仓库 (Gudang)</h1>
+                    <h1>仓库</h1>
                     <p class="text-muted">仓库管理常用词汇 (Kosa kata manajemen gudang).</p>
                 </div>
             </div>
@@ -72,8 +71,8 @@
                             <polyline points="12 6 12 12 16 14"></polyline>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Huò (货)</h4>
-                        <p>Barang</p>
+                        <h4>货</h4>
+                        <p>Barang (/Ba-rang/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -83,8 +82,8 @@
                             <line x1="9" y1="21" x2="9" y2="9"></line>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Kùcún (库存)</h4>
-                        <p>Stok / Persediaan</p>
+                        <h4>库存</h4>
+                        <p>Stok / Persediaan (/Stok/ /Per-se-di-a-an/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -94,8 +93,8 @@
                             <circle cx="12" cy="12" r="2"></circle>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Chāchē (叉车)</h4>
-                        <p>Forklift</p>
+                        <h4>叉车</h4>
+                        <p>Forklift (/Fork-lift/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -104,8 +103,8 @@
                             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Tuōpán (托盘)</h4>
-                        <p>Palet</p>
+                        <h4>托盘</h4>
+                        <p>Palet (/Pa-let/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -115,8 +114,8 @@
                             </path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Zhǐxiāng (纸箱)</h4>
-                        <p>Kardus</p>
+                        <h4>纸箱</h4>
+                        <p>Kardus (/Kar-dus/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -126,8 +125,8 @@
                             <line x1="8" y1="12" x2="16" y2="12"></line>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Jiāodài (胶带)</h4>
-                        <p>Lakban</p>
+                        <h4>胶带</h4>
+                        <p>Lakban (/Lak-ban/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -135,8 +134,8 @@
                             <path d="M12 20v-6M6 20V10M18 20V4"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Chèng (秤)</h4>
-                        <p>Timbangan</p>
+                        <h4>秤</h4>
+                        <p>Timbangan (/Tim-ba-ngan/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -148,8 +147,8 @@
                             <polyline points="10 9 9 9 8 9"></polyline>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Dānzi (单子)</h4>
-                        <p>Nota / Surat Jalan</p>
+                        <h4>单子</h4>
+                        <p>Nota / Surat Jalan (/No-ta/ /Su-rat Ja-lan/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -159,8 +158,8 @@
                             <line x1="12" y1="16" x2="12" y2="8"></line>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Shùliàng (数量)</h4>
-                        <p>Jumlah</p>
+                        <h4>数量</h4>
+                        <p>Jumlah (/Jum-lah/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -175,8 +174,8 @@
                             <line x1="12" y1="22.08" x2="12" y2="12"></line>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Zhòngliàng (重量)</h4>
-                        <p>Berat</p>
+                        <h4>重量</h4>
+                        <p>Berat (/Be-rat/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -187,8 +186,8 @@
                             <circle cx="18.5" cy="18.5" r="2.5"></circle>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Fāhuò (发货)</h4>
-                        <p>Kirim Barang</p>
+                        <h4>发货</h4>
+                        <p>Kirim Barang (/Ki-rim Ba-rang/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -198,8 +197,8 @@
                             <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Shōuhuò (收货)</h4>
-                        <p>Terima Barang</p>
+                        <h4>收货</h4>
+                        <p>Terima Barang (/Te-ri-ma Ba-rang/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -208,8 +207,8 @@
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Jiǎnchá (检查)</h4>
-                        <p>Cek / Periksa</p>
+                        <h4>检查</h4>
+                        <p>Cek / Periksa (/Cek/ /Pe-rik-sa/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -218,8 +217,8 @@
                             <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Qiānmíng (签名)</h4>
-                        <p>Tanda Tangan</p>
+                        <h4>签名</h4>
+                        <p>Tanda Tangan (/Tan-da Ta-ngan/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -229,8 +228,8 @@
                             </path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Lājī (垃圾)</h4>
-                        <p>Sampah</p>
+                        <h4>垃圾</h4>
+                        <p>Sampah (/Sam-pah/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -239,8 +238,8 @@
                             <polyline points="5 11 9 7 15 7 19 11"></polyline>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Cāngkù (仓库)</h4>
-                        <p>Gudang</p>
+                        <h4>仓库</h4>
+                        <p>Gudang (/Gu-dang/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -250,8 +249,8 @@
                             <path d="M8 22h8"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Bānyùn (搬运)</h4>
-                        <p>Angkat Barang</p>
+                        <h4>搬运</h4>
+                        <p>Angkat Barang (/Ang-kat Ba-rang/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -264,8 +263,8 @@
                             <path d="M8 18h8"></path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Tīzi (梯子)</h4>
-                        <p>Tangga</p>
+                        <h4>梯子</h4>
+                        <p>Tangga (/Tang-ga/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -277,8 +276,8 @@
                             <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Jiǎndāo (剪刀)</h4>
-                        <p>Gunting</p>
+                        <h4>剪刀</h4>
+                        <p>Gunting (/Gun-ting/)</p>
                     </div>
                 </div>
                 <div class="vocab-item">
@@ -288,8 +287,8 @@
                             </path>
                         </svg></div>
                     <div class="vocab-text">
-                        <h4>Yàoshi (钥匙)</h4>
-                        <p>Kunci</p>
+                        <h4>钥匙</h4>
+                        <p>Kunci (/Kun-ci/)</p>
                     </div>
                 </div>
             </div>
@@ -297,17 +296,13 @@
 
         <!-- RIGHT AD -->
         <aside class="ad-column">
-            <div class="ad-banner" style="height: 50%;">
-                <div>
-                    <h3>Flash Sale!</h3>
-                    <p>Diskon 50%</p>
-                </div>
+            <div class="ad-banner" onclick="openAffiliate()">
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
-            <div class="ad-banner" style="height: 30%; background: var(--primary); color: white;">
-                <div>
-                    <h3>HOT ITEM</h3>
-                    <p>Cek Sekarang</p>
-                </div>
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
         </aside>
     </div>
@@ -316,11 +311,8 @@
         <div class="popup-card">
             <button class="popup-close" onclick="handlePopupClose(event)">×</button>
             <div class="popup-img">
-                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="icon-svg"
-                    style="width:50px; height:50px; opacity:0.5;">
-                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                </svg>
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="width: 100px; height: auto; object-fit: contain;">
             </div>
             <h3>Rekomendasi Spesial</h3>
             <p style="margin-bottom: 20px; color: #94a3b8;">Lihat aplikasi belajar bahasa terbaik untuk HP Anda.</p>
@@ -338,17 +330,7 @@
     </div>
 
     <div class="glass-menu" id="superMenu">
-        <div class="menu-section">
-            <div class="menu-header">🇮🇩 Belajar Mandarin</div>
-            <div class="menu-grid">
-                <a href="materi-mandarin-panggilan.html" class="menu-link">🗣️ Panggilan</a>
-                <a href="materi-mandarin-sapaan.html" class="menu-link">👋 Sapaan</a>
-                <a href="materi-mandarin-izin.html" class="menu-link">🙏 Izin/Maaf</a>
-                <a href="materi-mandarin-kerja.html" class="menu-link">🛠️ Kerja</a>
-                <a href="materi-mandarin-jokes.html" class="menu-link">🤣 Jokes</a>
-                <a href="materi-mandarin-angka.html" class="menu-link">🔢 Angka</a>
-            </div>
-        </div>
+
         <div class="menu-section">
             <div class="menu-header">🇨🇳 Belajar Indonesia</div>
             <div class="menu-grid">
@@ -371,42 +353,7 @@
         </button>
     </div>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('scrolled');
-            else navbar.classList.remove('scrolled');
-        });
-        function toggleMenu() {
-            const menu = document.getElementById('superMenu');
-            const icon = document.getElementById('menuIcon');
-            menu.classList.toggle('active');
-            if (menu.classList.contains('active')) icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-            else icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-        }
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('superMenu');
-            const btn = document.querySelector('.fab-left .fab-btn');
-            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
-        });
-
-        // --- AD LOGIC ---
-        let closeAttempts = 0;
-        const affiliateLink = "https://s.shopee.co.id/1gCcK2PdCg"; // Placeholder - User to edit
-        function openAffiliate() { window.open(affiliateLink, '_blank'); }
-        function handlePopupClose(e) {
-            e.preventDefault();
-            if (closeAttempts === 0) {
-                window.open(affiliateLink, '_blank');
-                closeAttempts++;
-            } else {
-                document.getElementById('adPopup').classList.remove('active');
-            }
-        }
-        if (window.innerWidth < 768) {
-            setTimeout(() => { document.getElementById('adPopup').classList.add('active'); }, 3000);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

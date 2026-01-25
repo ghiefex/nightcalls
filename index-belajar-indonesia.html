@@ -6,43 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Bahasa Indonesia - Backdock</title>
     <link rel="stylesheet" href="style-main-index.css">
-    <style>
-        body {
-            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
-                url('https://images.unsplash.com/photo-1565035010268-a3816f98589a?q=80&w=1600&auto=format&fit=crop');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: white;
-        }
-
-        .hero {
-            background: transparent !important;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            color: white;
-        }
-
-        .card h3 {
-            color: white;
-        }
-
-        .text-muted {
-            color: #cbd5e1 !important;
-        }
-
-        .navbar {
-            background: rgba(15, 23, 42, 0.8) !important;
-            backdrop-filter: blur(10px);
-        }
-    </style>
 </head>
 
-<body>
+<body class="bg-indo">
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="nav-brand">BACKDOCK <span>印尼话</span></a>
@@ -56,11 +22,10 @@
         </div>
     </nav>
 
-    <section class="hero"
-        style="min-height: 50vh; display:flex; align-items:center; justify-content:center; text-align:center;">
-        <div class="hero-content animate-up">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Belajar Indonesia 🇮🇩</h1>
-            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">
+    <section class="hero">
+        <div class="hero-content animate-up text-center">
+            <h1 class="hero-title">Belajar Indonesia 🇮🇩</h1>
+            <p class="hero-subtitle">
                 工厂实用印尼语 (Bahasa Pabrik Praktis).
                 <br>
                 请选择下方的学习主题 (Pilih Topik).
@@ -68,43 +33,43 @@
         </div>
     </section>
 
-    <section class="container" style="padding-bottom: 120px; margin-top: -50px; position:relative; z-index:20;">
+    <section class="container section-overlap">
         <div class="grid-3 animate-up delay-100">
 
             <a href="materi-indo-gudang.html" class="card">
                 <h3>📦 仓库 (Gudang)</h3>
                 <p class="text-muted">货, 库存, 叉车...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar (开始)</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar (开始)</div>
             </a>
 
             <a href="materi-indo-mandor.html" class="card">
                 <h3>👷‍♂️ 工头 (Mandor)</h3>
                 <p class="text-muted">加班, 快点, 纪律...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar (开始)</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar (开始)</div>
             </a>
 
             <a href="materi-indo-produksi.html" class="card">
                 <h3>⚙️ 生产 (Produksi)</h3>
                 <p class="text-muted">目标, 废品, 开机...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar (开始)</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar (开始)</div>
             </a>
 
             <a href="materi-indo-perbaikan.html" class="card">
                 <h3>🔧 维修 (Perbaikan)</h3>
                 <p class="text-muted">坏了, 停电, 漏水...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar (开始)</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar (开始)</div>
             </a>
 
             <a href="materi-indo-seharihari.html" class="card">
                 <h3>🏠 生活 (Sehari-hari)</h3>
                 <p class="text-muted">吃饭, 睡觉, 厕所...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar (开始)</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar (开始)</div>
             </a>
 
             <a href="materi-indo-aplikasi.html" class="card">
                 <h3>📱 应用 (Aplikasi)</h3>
                 <p class="text-muted">打车, 网购, 密码...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar (开始)</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar (开始)</div>
             </a>
 
         </div>
@@ -158,26 +123,7 @@
         </button>
     </div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('superMenu');
-            const icon = document.getElementById('menuIcon');
-            menu.classList.toggle('active');
-            if (menu.classList.contains('active')) icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-            else icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-        }
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('superMenu');
-            const btn = document.querySelector('.fab-left .fab-btn');
-            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
-        });
-
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('scrolled');
-            else navbar.classList.remove('scrolled');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

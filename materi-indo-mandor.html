@@ -5,398 +5,353 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Gudang - Backdock</title>
-    <link rel="stylesheet" href="style-main-index.css">
+    <link rel="stylesheet" href="style-main-index.css?v=2">
 </head>
 
-body>
-<style>
-    body {
-        background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
-            url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop');
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    }
-</style>
-
-<nav class="navbar" id="navbar">
-    <div class="container">
-        <a href="index-belajar-indonesia.html" class="nav-brand">BACKDOCK <span>印尼话</span></a>
-        <a href="index.html" class="nav-link">
-            <!-- SVG HOME ICON NO EMOJI -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" style="width: 20px; height: 20px;">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-        </a>
-    </div>
-</nav>
-
-<div class="ad-grid-layout">
-    <aside class="ad-column">
-        <div class="ad-banner" onclick="openAffiliate()">
-            <div>
-                <h3>Iklan Afiliasi</h3>
-                <p>Produk Terbaik</p>
-            </div>
-        </div>
-        <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
-    </aside>
-
-    <main class="content-area">
-        <div class="content-header animate-up">
-            <div class="vocab-icon">
-                <!-- User/Foreman Icon -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    style="width: 32px; height: 32px;">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-            </div>
-            <div>
-                <h1>工头 (Mandor)</h1>
-                <p class="text-muted">管理员工常用词汇 (Kosa kata manajemen staff).</p>
-            </div>
-        </div>
-
-        <div class="vocab-list animate-up delay-100">
-            <!-- ITEMS -->
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Jiābān (加班)</h4>
-                    <p>Lembur</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <polyline points="13 2 13 9 20 9"></polyline>
-                        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Kuài diǎn (快点)</h4>
-                    <p>Cepat</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M10 8h4a2 2 0 1 1 0 4h-4v4h4a2 2 0 1 1 0 4h-4"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Màn (慢)</h4>
-                    <p>Pelan</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Bié lǎn (别懒)</h4>
-                    <p>Jangan Malas</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Jìlǜ (纪律)</h4>
-                    <p>Disiplin</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Bié chídào (别迟到)</h4>
-                    <p>Jangan Telat</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <line x1="12" y1="1" x2="12" y2="23"></line>
-                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Gōngzī (工资)</h4>
-                    <p>Gaji</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
-                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
-                        <line x1="6" y1="1" x2="6" y2="4"></line>
-                        <line x1="10" y1="1" x2="10" y2="4"></line>
-                        <line x1="14" y1="1" x2="14" y2="4"></line>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Xiūxi (休息)</h4>
-                    <p>Istirahat</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Jìhuà (计划)</h4>
-                    <p>Rencana / Plan</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Cuò le (错了)</h4>
-                    <p>Salah</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Duì (对)</h4>
-                    <p>Benar / Betul</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Kāihuì (开会)</h4>
-                    <p>Rapat / Meeting</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="1"></circle>
-                        <circle cx="12" cy="5" r="1"></circle>
-                        <circle cx="12" cy="19" r="1"></circle>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Tīng huà (听话)</h4>
-                    <p>Nurut / Patuh</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Bié shuōhuà (别说话)</h4>
-                    <p>Jangan Ngobrol</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path d="M20.38 3.4a2 2 0 0 0-2 0l-7 4-7-4a2 2 0 0 0-2 0 2 2 0 0 0 0 2l7 4 7-4a2 2 0 0 0 2-2z">
-                        </path>
-                        <path d="M2 13v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6"></path>
-                        <path d="M2 13l10 5.5L22 13"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Gōngzuò fú (工作服)</h4>
-                    <p>Seragam Kerja</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path
-                            d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.79 2.25-5 5-5s5 2.21 5 5c.03 2.5-1 3.5-1 5.62V16">
-                        </path>
-                        <path d="M8 20v-4"></path>
-                        <path d="M12 12H4"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Xiézi (鞋子)</h4>
-                    <p>Sepatu</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path d="M2 12h20"></path>
-                        <path d="M12 2a10 10 0 0 0-10 10"></path>
-                        <path d="M12 2a10 10 0 0 1 10 10"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Ānquán mào (安全帽)</h4>
-                    <p>Helm Safety</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <path d="M12 12l8-8"></path>
-                        <path d="M12 12l-8-8"></path>
-                        <path d="M12 12l8 8"></path>
-                        <path d="M12 12l-8 8"></path>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Hézuò (合作)</h4>
-                    <p>Kerjasama</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>
-                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Shēngqì (生气)</h4>
-                    <p>Marah</p>
-                </div>
-            </div>
-            <div class="vocab-item">
-                <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                    </svg></div>
-                <div class="vocab-text">
-                    <h4>Rènzhēn (认真)</h4>
-                    <p>Serius</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <aside class="ad-column">
-        <div class="ad-banner" style="height: 50%;">
-            <div>
-                <h3>Flash Sale!</h3>
-                <p>Diskon 50%</p>
-            </div>
-        </div>
-        <div class="ad-banner" style="height: 30%; background: var(--primary); color: white;">
-            <div>
-                <h3>HOT ITEM</h3>
-                <p>Cek Sekarang</p>
-            </div>
-        </div>
-    </aside>
-</div>
-
-<!-- POPUP -->
-<div class="popup-overlay" id="adPopup">
-    <div class="popup-card">
-        <button class="popup-close" onclick="handlePopupClose(event)">×</button>
-        <div class="popup-img">
-            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="icon-svg"
-                style="width:50px; height:50px; opacity:0.5;">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-            </svg>
-        </div>
-        <h3>Rekomendasi Spesial</h3>
-        <p style="margin-bottom: 20px; color: #94a3b8;">Lihat aplikasi belajar bahasa terbaik untuk HP Anda.</p>
-        <button class="popup-btn" onclick="openAffiliate()">LIHAT APLIKASI</button>
-    </div>
-</div>
-
-<!-- FLOATERS -->
-<div class="fab-container fab-left">
-    <button class="fab-btn" onclick="toggleMenu()">
-        <svg id="menuIcon" class="icon-svg" viewBox="0 0 24 24">
-            <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-    </button>
-</div>
-
-<div class="glass-menu" id="superMenu">
-    <div class="menu-section">
-        <div class="menu-header">🇮🇩 Belajar Mandarin</div>
-        <div class="menu-grid">
-            <a href="materi-mandarin-panggilan.html" class="menu-link">🗣️ Panggilan</a>
-            <a href="materi-mandarin-sapaan.html" class="menu-link">👋 Sapaan</a>
-            <a href="materi-mandarin-izin.html" class="menu-link">🙏 Izin/Maaf</a>
-            <a href="materi-mandarin-kerja.html" class="menu-link">🛠️ Kerja</a>
-            <a href="materi-mandarin-jokes.html" class="menu-link">🤣 Jokes</a>
-            <a href="materi-mandarin-angka.html" class="menu-link">🔢 Angka</a>
-        </div>
-    </div>
-    <div class="menu-section">
-        <div class="menu-header">🇨🇳 Belajar Indonesia</div>
-        <div class="menu-grid">
-            <a href="materi-indo-gudang.html" class="menu-link">📦 Gudang</a>
-            <a href="materi-indo-mandor.html" class="menu-link" style="background:var(--primary); color:white;">👷‍♂️
-                Mandor</a>
-            <a href="materi-indo-produksi.html" class="menu-link">⚙️ Produksi</a>
-            <a href="materi-indo-perbaikan.html" class="menu-link">🔧 Perbaikan</a>
-            <a href="materi-indo-seharihari.html" class="menu-link">🏠 Daily</a>
-            <a href="materi-indo-aplikasi.html" class="menu-link">📱 Apps</a>
-        </div>
-    </div>
-</div>
-
-<div class="fab-container fab-right">
-    <button class="fab-btn" onclick="window.history.back()">
-        <svg class="icon-svg" viewBox="0 0 24 24">
-            <path d="M15 19l-7-7 7-7" />
-        </svg>
-    </button>
-</div>
-
-<script>
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 50) navbar.classList.add('scrolled');
-        else navbar.classList.remove('scrolled');
-    });
-    function toggleMenu() {
-        const menu = document.getElementById('superMenu');
-        const icon = document.getElementById('menuIcon');
-        menu.classList.toggle('active');
-        if (menu.classList.contains('active')) icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-        else icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-    }
-    document.addEventListener('click', function (event) {
-        const menu = document.getElementById('superMenu');
-        const btn = document.querySelector('.fab-left .fab-btn');
-        if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
-    });
-    let closeAttempts = 0;
-    const affiliateLink = "https://s.shopee.co.id/1gCcK2PdCg";
-    function openAffiliate() { window.open(affiliateLink, '_blank'); }
-    function handlePopupClose(e) {
-        e.preventDefault();
-        if (closeAttempts === 0) {
-            window.open(affiliateLink, '_blank');
-            closeAttempts++;
-        } else {
-            document.getElementById('adPopup').classList.remove('active');
+<body>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
+                url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
         }
-    }
-    if (window.innerWidth < 768) {
-        setTimeout(() => { document.getElementById('adPopup').classList.add('active'); }, 3000);
-    }
-</script>
+    </style>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index-belajar-indonesia.html" class="nav-brand">BACKDOCK <span>印尼话</span></a>
+            <a href="index.html" class="nav-link">
+                <!-- SVG HOME ICON NO EMOJI -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" style="width: 20px; height: 20px;">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <div class="ad-grid-layout">
+        <aside class="ad-column">
+            <div class="ad-banner" onclick="openAffiliate()">
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <div class="content-header animate-up">
+                <div class="vocab-icon">
+                    <!-- User/Foreman Icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width: 32px; height: 32px;">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div>
+                    <h1>工头</h1>
+                    <p class="text-muted">管理员工常用词汇 (Kosa kata manajemen staff).</p>
+                </div>
+            </div>
+
+            <div class="vocab-list animate-up delay-100">
+                <!-- ITEMS -->
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>加班</h4>
+                        <p>Lembur (/Lem-bur/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <polyline points="13 2 13 9 20 9"></polyline>
+                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>快点</h4>
+                        <p>Cepat (/Ce-pat/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M10 8h4a2 2 0 1 1 0 4h-4v4h4a2 2 0 1 1 0 4h-4"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>慢</h4>
+                        <p>Pelan (/Pe-lan/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>别懒</h4>
+                        <p>Jangan Malas (/Ja-ngan Ma-las/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>纪律</h4>
+                        <p>Disiplin (/Di-sip-lin/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>别迟到</h4>
+                        <p>Jangan Telat (/Ja-ngan Te-lat/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>工资</h4>
+                        <p>Gaji (/Ga-ji/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>休息</h4>
+                        <p>Istirahat (/Is-ti-ra-hat/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>计划</h4>
+                        <p>Rencana / Plan (/Ren-ca-na/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>错了</h4>
+                        <p>Salah (/Sa-lah/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>对</h4>
+                        <p>Benar / Betul (/Be-nar/ /Be-tul/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>开会</h4>
+                        <p>Rapat / Meeting (/Ra-pat/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <circle cx="12" cy="5" r="1"></circle>
+                            <circle cx="12" cy="19" r="1"></circle>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>听话</h4>
+                        <p>Nurut / Patuh (/Nu-rut/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>别说话</h4>
+                        <p>Jangan Ngobrol (/Ja-ngan Ngo-brol/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path
+                                d="M20.38 3.4a2 2 0 0 0-2 0l-7 4-7-4a2 2 0 0 0-2 0 2 2 0 0 0 0 2l7 4 7-4a2 2 0 0 0 2-2z">
+                            </path>
+                            <path d="M2 13v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6"></path>
+                            <path d="M2 13l10 5.5L22 13"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>工作服</h4>
+                        <p>Seragam Kerja (/Se-ra-gam Ker-ja/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path
+                                d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.79 2.25-5 5-5s5 2.21 5 5c.03 2.5-1 3.5-1 5.62V16">
+                            </path>
+                            <path d="M8 20v-4"></path>
+                            <path d="M12 12H4"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>鞋子</h4>
+                        <p>Sepatu (/Se-pa-tu/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M2 12h20"></path>
+                            <path d="M12 2a10 10 0 0 0-10 10"></path>
+                            <path d="M12 2a10 10 0 0 1 10 10"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>安全帽</h4>
+                        <p>Helm Safety (/Helm Sef-ti/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M12 12l8-8"></path>
+                            <path d="M12 12l-8-8"></path>
+                            <path d="M12 12l8 8"></path>
+                            <path d="M12 12l-8 8"></path>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>合作</h4>
+                        <p>Kerjasama (/Ker-ja-sa-ma/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>生气</h4>
+                        <p>Marah (/Ma-rah/)</p>
+                    </div>
+                </div>
+                <div class="vocab-item">
+                    <div class="vocab-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg></div>
+                    <div class="vocab-text">
+                        <h4>认真</h4>
+                        <p>Serius (/Se-ri-us/)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="ad-column">
+            <div class="ad-banner" onclick="openAffiliate()">
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
+        </aside>
+    </div>
+
+    <!-- POPUP -->
+    <div class="popup-overlay" id="adPopup">
+        <div class="popup-card">
+            <button class="popup-close" onclick="handlePopupClose(event)">×</button>
+            <div class="popup-img">
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="width: 100px; height: auto; object-fit: contain;">
+            </div>
+            <h3>Rekomendasi Spesial</h3>
+            <p style="margin-bottom: 20px; color: #94a3b8;">Lihat aplikasi belajar bahasa terbaik untuk HP Anda.</p>
+            <button class="popup-btn" onclick="openAffiliate()">LIHAT APLIKASI</button>
+        </div>
+    </div>
+
+    <!-- FLOATERS -->
+    <div class="fab-container fab-left">
+        <button class="fab-btn" onclick="toggleMenu()">
+            <svg id="menuIcon" class="icon-svg" viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="glass-menu" id="superMenu">
+
+        <div class="menu-section">
+            <div class="menu-header">🇨🇳 Belajar Indonesia</div>
+            <div class="menu-grid">
+                <a href="materi-indo-gudang.html" class="menu-link">📦 Gudang</a>
+                <a href="materi-indo-mandor.html" class="menu-link"
+                    style="background:var(--primary); color:white;">👷‍♂️
+                    Mandor</a>
+                <a href="materi-indo-produksi.html" class="menu-link">⚙️ Produksi</a>
+                <a href="materi-indo-perbaikan.html" class="menu-link">🔧 Perbaikan</a>
+                <a href="materi-indo-seharihari.html" class="menu-link">🏠 Daily</a>
+                <a href="materi-indo-aplikasi.html" class="menu-link">📱 Apps</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fab-container fab-right">
+        <button class="fab-btn" onclick="window.history.back()">
+            <svg class="icon-svg" viewBox="0 0 24 24">
+                <path d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
+</html>

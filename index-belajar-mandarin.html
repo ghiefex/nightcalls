@@ -6,43 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Mandarin - Backdock</title>
     <link rel="stylesheet" href="style-main-index.css">
-    <style>
-        body {
-            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
-                url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1600&auto=format&fit=crop');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: white;
-        }
-
-        .hero {
-            background: transparent !important;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            color: white;
-        }
-
-        .card h3 {
-            color: white;
-        }
-
-        .text-muted {
-            color: #cbd5e1 !important;
-        }
-
-        .navbar {
-            background: rgba(15, 23, 42, 0.8) !important;
-            backdrop-filter: blur(10px);
-        }
-    </style>
 </head>
 
-<body>
+<body class="bg-mandarin">
+
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="nav-brand">BACKDOCK <span>印尼话</span></a>
@@ -56,11 +23,10 @@
         </div>
     </nav>
 
-    <section class="hero"
-        style="min-height: 50vh; display:flex; align-items:center; justify-content:center; text-align:center;">
-        <div class="hero-content animate-up">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Survival Mandarin 🇨🇳</h1>
-            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">
+    <section class="hero">
+        <div class="hero-content animate-up text-center">
+            <h1 class="hero-title">Survival Mandarin 🇨🇳</h1>
+            <p class="hero-subtitle">
                 Bahasa Mandarin praktis untuk bertahan hidup di pabrik.
                 <br>
                 Pilih topik di bawah ini untuk mulai belajar.
@@ -68,43 +34,67 @@
         </div>
     </section>
 
-    <section class="container" style="padding-bottom: 120px; margin-top: -50px; position:relative; z-index:20;">
+    <section class="container section-overlap">
         <div class="grid-3 animate-up delay-100">
 
             <a href="materi-mandarin-panggilan.html" class="card">
                 <h3>🗣️ Panggilan</h3>
                 <p class="text-muted">Bos, Mandor, Rekan kerja...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
             </a>
 
             <a href="materi-mandarin-sapaan.html" class="card">
                 <h3>👋 Sapaan</h3>
                 <p class="text-muted">Halo, Pagi, Malam...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
             </a>
 
             <a href="materi-mandarin-izin.html" class="card">
                 <h3>🙏 Izin & Maaf</h3>
                 <p class="text-muted">Sakit, Cuti, Maaf...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
             </a>
 
             <a href="materi-mandarin-kerja.html" class="card">
                 <h3>🛠️ Masalah Kerja</h3>
                 <p class="text-muted">Rusak, Tidak mengerti...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
             </a>
 
             <a href="materi-mandarin-jokes.html" class="card">
                 <h3>🤣 Jokes</h3>
                 <p class="text-muted">Ganteng, Cantik, Capek...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
+            </a>
+
+            <a href="materi-mandarin-perintah.html" class="card">
+                <h3>⚠️ Perintah/Teguran</h3>
+                <p class="text-muted">Instruksi, Marah, Koreksi...</p>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
+            </a>
+
+            <a href="materi-mandarin-emosi.html" class="card">
+                <h3>😤 Emosi & Diskusi</h3>
+                <p class="text-muted">Debat, Minta Tolong, Sopan...</p>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
+            </a>
+
+            <a href="materi-mandarin-sosial.html" class="card">
+                <h3>💬 Sosial & Merayu</h3>
+                <p class="text-muted">Nongkrong, Flirting, Bercanda...</p>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
+            </a>
+
+            <a href="materi-mandarin-waktu.html" class="card">
+                <h3>⏰ Waktu & Cuaca</h3>
+                <p class="text-muted">Jam, Tanggal, Panas/Hujan...</p>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
             </a>
 
             <a href="materi-mandarin-angka.html" class="card">
                 <h3>🔢 Angka</h3>
                 <p class="text-muted">1, 2, 3, 100, 1000...</p>
-                <div class="btn btn-primary btn-sm" style="width:100%; margin-top:15px;">Mulai Belajar</div>
+                <div class="btn btn-primary btn-sm">Mulai Belajar</div>
             </a>
 
         </div>
@@ -116,7 +106,6 @@
         </div>
     </footer>
 
-    <!-- FLOATERS -->
     <div class="fab-container fab-left">
         <button class="fab-btn" onclick="toggleMenu()">
             <svg id="menuIcon" class="icon-svg" viewBox="0 0 24 24">
@@ -158,26 +147,7 @@
         </button>
     </div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('superMenu');
-            const icon = document.getElementById('menuIcon');
-            menu.classList.toggle('active');
-            if (menu.classList.contains('active')) icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-            else icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-        }
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('superMenu');
-            const btn = document.querySelector('.fab-left .fab-btn');
-            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
-        });
-
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('scrolled');
-            else navbar.classList.remove('scrolled');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

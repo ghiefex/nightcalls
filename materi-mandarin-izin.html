@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi Gudang - Backdock</title>
-    <link rel="stylesheet" href="style-main-index.css">
+    <link rel="stylesheet" href="style-main-index.css?v=2">
 </head>
 
 <body>
-    <style>
-        body {
-            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
-                url('https://images.unsplash.com/photo-1577415124269-fc1140a69e91?q=80&w=1600&auto=format&fit=crop');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-        }
-    </style>
+    body {
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
+    url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    }
 
     <nav class="navbar" id="navbar">
         <div class="container">
@@ -35,12 +33,13 @@
     <div class="ad-grid-layout">
         <aside class="ad-column">
             <div class="ad-banner" onclick="openAffiliate()">
-                <div>
-                    <h3>Iklan Afiliasi</h3>
-                    <p>Produk Terbaik</p>
-                </div>
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
-            <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
         </aside>
 
         <main class="content-area">
@@ -282,12 +281,13 @@
 
         <aside class="ad-column">
             <div class="ad-banner" onclick="openAffiliate()">
-                <div>
-                    <h3>Iklan Afiliasi</h3>
-                    <p>Cek Promo</p>
-                </div>
+                <img src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo.png" alt="Shopee"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
-            <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
+            <div class="ad-banner" onclick="openTiktok()">
+                <img src="https://seeklogo.com/images/T/tiktok-icon-logo-1CB398A1BD-seeklogo.com.png" alt="TikTok"
+                    style="max-width: 80%; max-height: 80%; object-fit: contain;">
+            </div>
         </aside>
     </div>
 
@@ -296,11 +296,8 @@
         <div class="popup-card">
             <button class="popup-close" onclick="handlePopupClose(event)">×</button>
             <div class="popup-img">
-                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="icon-svg"
-                    style="width:50px; height:50px; opacity:0.5;">
-                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                </svg>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/320px-Shopee.svg.png"
+                    alt="Shopee" style="width: 100px; height: auto; object-fit: contain;">
             </div>
             <h3>Rekomendasi Spesial</h3>
             <p style="margin-bottom: 20px; color: #94a3b8;">Lihat aplikasi belajar bahasa terbaik untuk HP Anda.</p>
@@ -320,24 +317,14 @@
         <div class="menu-section">
             <div class="menu-header">🇮🇩 Belajar Mandarin</div>
             <div class="menu-grid">
+                <a href="materi-mandarin-perintah.html" class="menu-link">⚠️ Perintah</a>
+                <a href="materi-mandarin-emosi.html" class="menu-link">😤 Emosi & Diskusi</a>
+                <a href="materi-mandarin-sosial.html" class="menu-link">💬 Sosial & Merayu</a>
+                <a href="materi-mandarin-waktu.html" class="menu-link">⏰ Waktu & Cuaca</a>
                 <a href="materi-mandarin-panggilan.html" class="menu-link">🗣️ Panggilan</a>
-                <a href="materi-mandarin-sapaan.html" class="menu-link">👋 Sapaan</a>
-                <a href="materi-mandarin-izin.html" class="menu-link" style="background:var(--primary); color:white;">🙏
-                    Izin/Maaf</a>
                 <a href="materi-mandarin-kerja.html" class="menu-link">🛠️ Kerja</a>
                 <a href="materi-mandarin-jokes.html" class="menu-link">🤣 Jokes</a>
                 <a href="materi-mandarin-angka.html" class="menu-link">🔢 Angka</a>
-            </div>
-        </div>
-        <div class="menu-section">
-            <div class="menu-header">🇨🇳 Belajar Indonesia</div>
-            <div class="menu-grid">
-                <a href="materi-indo-gudang.html" class="menu-link">📦 Gudang</a>
-                <a href="materi-indo-mandor.html" class="menu-link">👷‍♂️ Mandor</a>
-                <a href="materi-indo-produksi.html" class="menu-link">⚙️ Produksi</a>
-                <a href="materi-indo-perbaikan.html" class="menu-link">🔧 Perbaikan</a>
-                <a href="materi-indo-seharihari.html" class="menu-link">🏠 Daily</a>
-                <a href="materi-indo-aplikasi.html" class="menu-link">📱 Apps</a>
             </div>
         </div>
     </div>
@@ -350,38 +337,7 @@
         </button>
     </div>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('scrolled');
-            else navbar.classList.remove('scrolled');
-        });
-        function toggleMenu() {
-            const menu = document.getElementById('superMenu');
-            const icon = document.getElementById('menuIcon');
-            menu.classList.toggle('active');
-            if (menu.classList.contains('active')) icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-            else icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-        }
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('superMenu');
-            const btn = document.querySelector('.fab-left .fab-btn');
-            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
-        });
-        let closeAttempts = 0;
-        const affiliateLink = "https://s.shopee.co.id/5fil5IHQvL";
-        function openAffiliate() { window.open(affiliateLink, '_blank'); }
-        function handlePopupClose(e) {
-            e.preventDefault();
-            if (closeAttempts === 0) {
-                window.open(affiliateLink, '_blank');
-                closeAttempts++;
-            } else {
-                document.getElementById('adPopup').classList.remove('active');
-            }
-        }
-        if (window.innerWidth < 768) {
-            setTimeout(() => { document.getElementById('adPopup').classList.add('active'); }, 3000);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
+
+</html>

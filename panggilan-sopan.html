@@ -35,10 +35,8 @@
     <div class="ad-grid-layout">
         <aside class="ad-column">
             <div class="ad-banner" onclick="openAffiliate()">
-                <div>
-                    <h3>Iklan Afiliasi</h3>
-                    <p>Produk Terbaik</p>
-                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/320px-Shopee.svg.png"
+                    alt="Shopee" style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
             <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
         </aside>
@@ -395,18 +393,11 @@
         </main>
 
         <aside class="ad-column">
-            <div class="ad-banner" style="height: 50%;">
-                <div>
-                    <h3>Flash Sale!</h3>
-                    <p>Diskon 50%</p>
-                </div>
+            <div class="ad-banner" onclick="openAffiliate()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/320px-Shopee.svg.png"
+                    alt="Shopee" style="max-width: 80%; max-height: 80%; object-fit: contain;">
             </div>
-            <div class="ad-banner" style="height: 30%; background: var(--primary); color: white;">
-                <div>
-                    <h3>HOT ITEM</h3>
-                    <p>Cek Sekarang</p>
-                </div>
-            </div>
+            <div class="ad-banner" style="height: 200px; opacity: 0.5;">Space Iklan</div>
         </aside>
     </div>
 
@@ -415,11 +406,8 @@
         <div class="popup-card">
             <button class="popup-close" onclick="handlePopupClose(event)">×</button>
             <div class="popup-img">
-                <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" class="icon-svg"
-                    style="width:50px; height:50px; opacity:0.5;">
-                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                </svg>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/320px-Shopee.svg.png"
+                    alt="Shopee" style="width: 100px; height: auto; object-fit: contain;">
             </div>
             <h3>Rekomendasi Spesial</h3>
             <p style="margin-bottom: 20px; color: #94a3b8;">Lihat aplikasi belajar bahasa terbaik untuk HP Anda.</p>
@@ -469,40 +457,7 @@
         </button>
     </div>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('scrolled');
-            else navbar.classList.remove('scrolled');
-        });
-        function toggleMenu() {
-            const menu = document.getElementById('superMenu');
-            const icon = document.getElementById('menuIcon');
-            menu.classList.toggle('active');
-            if (menu.classList.contains('active')) icon.innerHTML = '<path d="M6 18L18 6M6 6l12 12"/>';
-            else icon.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"/>';
-        }
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('superMenu');
-            const btn = document.querySelector('.fab-left .fab-btn');
-            if (!menu.contains(event.target) && !btn.contains(event.target) && menu.classList.contains('active')) toggleMenu();
-        });
-        let closeAttempts = 0;
-        const affiliateLink = "https://s.shopee.co.id/4AtxIpN1Qv";
-        function openAffiliate() { window.open(affiliateLink, '_blank'); }
-        function handlePopupClose(e) {
-            e.preventDefault();
-            if (closeAttempts === 0) {
-                window.open(affiliateLink, '_blank');
-                closeAttempts++;
-            } else {
-                document.getElementById('adPopup').classList.remove('active');
-            }
-        }
-        if (window.innerWidth < 768) {
-            setTimeout(() => { document.getElementById('adPopup').classList.add('active'); }, 3000);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
